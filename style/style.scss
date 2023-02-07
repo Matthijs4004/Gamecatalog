@@ -1,0 +1,131 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.hide {
+    display: none;
+}
+
+
+.container, .container2 {
+    header {
+        display: flex;
+        width: 100%;
+        background-color: black;
+        .games {
+            width: 100%;
+        }
+        .gamepicker {
+            
+        }
+        nav {
+            display: flex;
+            
+            a {
+                padding: 20px;
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    background-color: gray;
+                }
+            }
+            .active {
+                background-color: red;
+                &:hover {
+                    background-color: rgb(255, 116, 116);
+                }
+            }
+        }
+    }
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .top-div {
+            display: flex;
+            padding: 20px;
+            border-bottom: 1px solid black;
+            .game {
+                &-description {
+                    width: 75%;
+                    padding-right: 20px;
+                }
+                &-info {
+                    width: 25%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    border-left: 1px solid black;
+                }
+            }
+        }
+        .screenshots {
+            display: flex;
+            img {
+                width: 25%;
+            }
+        }
+        .system-requirements {
+            padding: 20px;
+            border-bottom: 1px solid black;
+            h1 {
+                margin-top: 0;
+            }
+        }
+        .reviews {
+            padding: 20px;
+            ol {
+                li {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    .games {
+        width: 100%;
+    }
+    .gamepicker {
+        
+    }
+    nav {
+        display: flex;
+        
+        a {
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                background-color: gray;
+                cursor: pointer;
+            }
+        }
+        .active {
+            background-color: red;
+            &:hover {
+                background-color: rgb(255, 116, 116);
+            }
+        }
+    }
+}
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    h1 {
+        color: white;
+    }
+}
